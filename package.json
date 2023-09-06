@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_dashboard":"npx cypress run --record --key 707f2721-528e-4def-b7af-d89e8a2ca1a7",
+    "dashboard_day04":"npx cypress run --spec 'e2e/day04/' --record --key 707f2721-528e-4def-b7af-d89e8a2ca1a7"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "cypress": "^13.1.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",

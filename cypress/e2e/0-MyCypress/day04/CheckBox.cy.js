@@ -1,6 +1,5 @@
 ///<reference types="Cypress" />
 
-const { multiply } = require("cypress/types/lodash");
 
 describe('Checkbox Methodları', () => {
     it.skip('Checkbox Seçimi', () => {
