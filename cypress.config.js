@@ -9,7 +9,7 @@ module.exports = defineConfig({
       // implement node event listeners here
 
     },
-    baseUrl:"https://www.google.com",
+    baseUrl:"https://wisequarter.com",
     projectId: "cuc4h1",
     video: false, //Video kaydı alınmasını engeller. False yerine true yapılarak kayıt alınması sağlanabilir.
     retire:2      // Fail olan testlerin iki defa daha çalıştırılmasını sağlar.
