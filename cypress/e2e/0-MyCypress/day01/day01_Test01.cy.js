@@ -1,6 +1,6 @@
 describe('Temel Cypress Komutlari', () => {
     it('cy.visit komutu', () => {
-        cy.visit('/') //baseUrl tanimlandiysa
+        //cy.visit('/') //baseUrl tanimlandiysa
         cy.visit('https://www.amazon.com')//base url tanimli degilse        
     });  
 
@@ -9,7 +9,7 @@ describe('Temel Cypress Komutlari', () => {
         
     });
 
-    it.skip('cy.title komutu', () => { // skip komutu bu testin es geçilmesini sağlar
+    it('cy.title komutu', () => { // skip komutu bu testin es geçilmesini sağlar
         cy.visit('/') //baseUrl adrese gider
         cy.title().should('eq','IT Bootcamp, Distance education method - Wise Quarter Course') //title icin tam esitlik durumudur
         cy.title().should('include','education') // verilen string icerme durumu
