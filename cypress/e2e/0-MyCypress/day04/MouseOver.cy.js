@@ -1,7 +1,7 @@
 ///<reference types="Cypress" />
 
 describe('Hover Over', () => {
-    it('', () => {
+    it.only('', () => {
         cy.visit('https://www.amazon.com')
         cy.wait(2500)
         cy.get('.icp-nav-link-inner > .nav-line-2').trigger('mouseover')
@@ -13,7 +13,7 @@ describe('Hover Over', () => {
         cy.get('.a-button-input').click()
         
     });
-    it.only('', () => {
+    it.skip('', () => {
         cy.visit('https://amazon.com')
         cy.wait(4000)
         cy.reload() // sayfayı refresh

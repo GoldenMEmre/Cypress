@@ -2,10 +2,11 @@
 
 
 describe('File Upload', () => {
-    //cypress-file-upload Plugin yüklenmelidir
+    //npm install --save-dev cypress-file-upload Bu komut, terminalden çalıştırılır. Sonra
+    //import 'cypress-file-upload' ifadesi e2e klasörüne eklenir.
 
 
-    it.skip('Single File upload', () => {
+    it.only('Single File upload', () => {
         cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php')
         const path1="wise1.jpg"
         cy.get('#filesToUpload').attachFile(path1)
@@ -36,7 +37,7 @@ describe('File Upload', () => {
         
     });
 
-    it.only('Multiple File Upload 3', () => {
+    it.skip('Multiple File Upload 3', () => {
         cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php')
         const path1="wise1.jpg"
         const path2="wise2.jpg"

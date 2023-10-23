@@ -39,3 +39,11 @@ Cypress.Commands.add('amazonsearch',(productName)=>{
     cy.get('#twotabsearchtextbox').should('have.value',productName)
 
 })
+Cypress.Commands.add('googlesearch',(productName2)=>{
+    cy.visit('https://www.google.com')
+    cy.get('#APjFqb').type(productName2).type('{enter}')    
+    cy.get('#APjFqb').should('have.value',productName2)
+    
+
+    
+})

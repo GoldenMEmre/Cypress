@@ -1,8 +1,8 @@
 ///<reference types="Cypress" />
-describe('Amazon Search', () => {
+describe('Google Search', () => {
 
     it('Amazon iPhone Search', () => {
-        cy.amazonsearch('Samsung')
+        cy.googlesearch('Apple')
         
     });
 });

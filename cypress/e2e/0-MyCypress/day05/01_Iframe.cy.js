@@ -22,6 +22,7 @@ describe('', () => {
         cy.get('.large-4 > div').should('contains.text','Powered by Elemental Selenium')
         cy.log('Sayfa girişi doğrulandı.')
         cy.get('.large-4 > div').click()
+        cy.wait(3000)
         cy.screenshot()
 
 
