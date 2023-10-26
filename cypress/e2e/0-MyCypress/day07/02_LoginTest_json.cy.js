@@ -14,6 +14,8 @@ describe('Json ile Login Testi ', () => {
 
     });
 });
+Hocanın yukarıdaki kodları çalışmadı. ChatCPT'nin aşağıdaki kodları çalıştı. Yukarıdaki sorun fixture'daki url'e
+ulaşılamaması. Bunun sebebi de data'yı aynı isimle yazıp this ile çağırması. 
 */
 
 describe('Json ile Login Testi', () => {

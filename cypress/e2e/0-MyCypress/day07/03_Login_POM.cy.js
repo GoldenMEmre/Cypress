@@ -8,7 +8,7 @@ describe('POM ile Login', () => {
 
     it('Login testi', () => {
 
-        const homePage = new HomePage()
+        const homePage = new HomePage ()
 
         const loginPage = new LoginPage()
 
